@@ -28,4 +28,30 @@ const myObj = {
 
 }
 
-function greet
+// https://262.ecma-international.org/5.1/#sec-13.2
+
+// +++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-primitive)
+
+let myYouTubename = "tejashamanedotcom";
+let anothername = myYouTubename;
+
+anothername = "codewithtejashamanedotcom";
+
+console.log(anothername);
+console.log(myYouTubename);
+
+let userOne = {
+    email: "user@google.com"
+    upi:"user@upi"
+
+}
+
+let userTwo = userOne
+
+userTwo.email = "tejas@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+console
